@@ -36,4 +36,4 @@ Only single songs and videos are supported. Playlist links download just the cur
 
 ## Screenshot
 
-![AudioGrabber EXT](docs/ss1.png)
+![AudioGrabber EXT](ss/ss1.png)
