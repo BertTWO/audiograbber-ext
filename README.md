@@ -34,8 +34,6 @@ Only single songs and videos are supported. Playlist links download just the cur
 | yt-dlp or ffmpeg is missing | Press Install now |
 | Download fails after working before | Settings > Update tools (YouTube changes often) |
 
-## Legal
+## Screenshot
 
-Downloading from YouTube may violate YouTube's Terms of Service and copyright law in your country. This project is provided for personal use with content you have the right to save, such as your own uploads, Creative Commons videos, or music you've licensed. You are responsible for how you use it. It does not and will not support DRM-protected services such as Spotify.
-
-This project isn't affiliated with or endorsed by YouTube or Google.
+![AudioGrabber EXT](docs/ss1.png)
