@@ -1,0 +1,5 @@
+host/host.bat
+host/host.sh
+host/com.example.audiograbber.json
+__pycache__/
+*.pyc

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YT Music Audio Grabber",
+  "version": "2.0",
+  "description": "Save audio from YouTube Music with one click.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmyRq4kmuwVXvKX/kfXH13JRQKUXpO5dM0lBUnvWv7SRH7eVxX8f2F+m0Pv4Ho19FeaWguLuP8kXmfEGTmBWMiBtsnouI+aXYkHPcB4rKaxwv23RcdVgQePkkYXJPTqN0CqdbiAW6Z7xAd6nijPnso7btCB8M4gf9GDl5LZlELLLuSJAv2SNVfNYVfUVJyNqdfp0lzYRij85A4mM9hKAsMXKiS9Czwc7OMEYU2j5356sAeaHsycOqPLUPbM8IrphAa30kz82TQJOwhlwHRO6TZdrqTdnv1U6nF8jwZQfGOLS1aSzRQWSmP1e30xLy3h6qnhVv6iD9QbZMWgun0MP1AwIDAQAB",
+  "permissions": ["activeTab", "nativeMessaging", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+  },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}

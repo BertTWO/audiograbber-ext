@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Audio Grabber</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Audio Grabber</h1>
+    <button id="gear" class="ghost" aria-label="Settings" aria-expanded="false">Settings</button>
+  </header>
+
+  <div id="banner" class="banner" hidden>
+    <strong id="bannerTitle"></strong>
+    <p id="bannerText"></p>
+    <button id="bannerBtn" class="small"></button>
+  </div>
+
+  <section class="now">
+    <div id="vinyl" class="vinyl"><img id="thumb" alt=""></div>
+    <div class="nowText">
+      <div id="nowTitle" class="nowTitle"></div>
+      <div id="nowHint" class="muted"></div>
+    </div>
+  </section>
+  <button id="dl" class="primary">Download</button>
+
+  <section id="settings" class="panel" hidden>
+    <label class="row">
+      <span>Format</span>
+      <select id="format">
+        <option value="mp3">MP3</option>
+        <option value="m4a">M4A (AAC)</option>
+        <option value="opus">Opus (original quality)</option>
+      </select>
+    </label>
+    <label class="row" id="qualityRow">
+      <span>MP3 quality</span>
+      <select id="quality">
+        <option value="128">128 kbps</option>
+        <option value="192">192 kbps</option>
+        <option value="320">320 kbps</option>
+      </select>
+    </label>
+    <label class="row check">
+      <span>Add cover art and song info</span>
+      <input id="embed" type="checkbox">
+    </label>
+    <label class="col">
+      <span>Save to</span>
+      <input id="dir" type="text" spellcheck="false" placeholder="Default folder">
+    </label>
+    <div class="toolsRow">
+      <span id="tools" class="muted"></span>
+      <button id="update" class="small">Update tools</button>
+    </div>
+  </section>
+
+  <section class="recent">
+    <div class="recentHead">
+      <h2>Recent</h2>
+      <span>
+        <button id="openDir" class="link">Open folder</button>
+        <button id="clear" class="link">Clear</button>
+      </span>
+    </div>
+    <ul id="list"></ul>
+    <p id="empty" class="muted">Songs you download will appear here.</p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
